@@ -11,6 +11,9 @@ module.exports = {
           'max': '576px'
         }
       },
+      spacing:{
+        '25px':'25px'
+      }
     },
   },
   plugins: [],

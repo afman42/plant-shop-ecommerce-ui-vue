@@ -19,13 +19,12 @@
 				v-for="(item,index) in category"
 				:class="{
 					'sm:text-[#00B761]': index === 0,
-					'sm:border-2': index === 0,
-					'sm:border-b-[#00B761]': index === 0,
 					'sm:text-[#000]': index != 0,
 					'sm:ml-5': index != 0,
 					'sm:pb-1': index === 0
 				}" style="font-size:14px;">
 				{{ item.nameCategory }}
+				<div v-if="index === 0" class="sm:w-5 sm:h-0.5 sm:bg-[#00B761]"></div>
 			</div>
 		</div>
 		<div class="sm:columns-2 sm:mt-5">
